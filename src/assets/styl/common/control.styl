@@ -1,0 +1,107 @@
+@import './util'
+@import '../setting'
+font-style()
+  font-size .8em
+button-style()
+  color $btnFontColor
+  background-color $btnBgColor
+  box-shadow 1px 1px 1px lighten(black, 30%)
+
+.control
+  square(8em)
+  transform translateY(-20px)
+  input[type=range]
+    -webkit-appearance none
+    outline none
+    width 100%
+    height .2em
+    border-radius @height/2
+    background-color $btnBgColor
+  input[type=range]::-webkit-slider-thumb
+    -webkit-appearance none
+    circle(1em)
+    cursor pointer
+    background-color $btnBgColor
+    box-shadow 0 0 0 2px $btnFontColor
+
+.start
+.get-markdown
+  center()
+  circle(3em)
+  text-center()
+  font-style()
+  button-style()
+
+.start
+  cursor pointer
+
+.quick-change-page
+  center()
+  circle(3em)
+  text-center()
+  font-style()
+  button-style()
+  input-noBorder()
+
+.control-button
+  triangle(3em, $btnBgColor)
+  font-style()
+
+.go-home
+.control-size
+.refresh
+.hide-buttons
+.show-control
+  circle(2.5em)
+  text-center()
+  font-style()
+  button-style()
+  input-noBorder()
+
+.font-size
+  bottom-left()
+  transform translateY(25px)
+
+.control-size
+  bottom-left()
+
+.hide-buttons
+  top-left()
+  cursor pointer
+
+.refresh
+  bottom-right()
+  cursor pointer
+
+.go-home
+  top-right()
+  cursor pointer
+
+.show-control
+  cursor pointer
+  position fixed
+  z-index 10
+  right -40px
+  bottom 0
+
+.top
+  middle-top()
+
+.left
+  middle-left()
+  transform rotate(-90deg) translateX(50%)
+  transform-origin center
+
+.right
+  middle-right()
+  transform rotate(90deg) translateX(-50%)
+  transform-origin center
+
+.bottom
+  middle-bottom()
+  transform rotate(180deg) translateX(50%)
+  transform-origin center
+
+.disabled
+  pointer-events none
+  border-bottom-color lighten($btnBgColor, 40%)

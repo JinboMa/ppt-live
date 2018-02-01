@@ -1,0 +1,71 @@
+// 绝对定位
+center()
+  position absolute
+  top 50%
+  left 50%
+  transform translate(-50%,-50%)
+middle-top()
+  position absolute
+  top 0
+  left 50%
+  transform translateX(-50%)
+middle-bottom()
+  position absolute
+  bottom 0
+  left 50%
+  transform translateX(-50%)
+middle-left()
+  position absolute
+  top 50%
+  left 0
+  transform translateY(-50%)
+middle-right()
+  position absolute
+  top 50%
+  right 0
+  transform translateY(-50%)
+top-left()
+  position absolute
+  top 0
+  left 0
+top-right()
+  position absolute
+  top 0
+  right 0
+bottom-left()
+  position absolute
+  bottom 0
+  left 0
+bottom-right()
+  position absolute
+  bottom 0
+  right 0
+// 文字
+text-center()
+  line-height @height
+  text-align center
+// 形状
+square(n)
+  width n
+  height n
+circle(n)
+  width n
+  height n
+  border-radius (n/2)
+triangle(n, color)
+  width 0
+  height 0
+  border-left (n/2) solid transparent
+  border-right (n/2) solid transparent
+  border-bottom n solid color
+// 其他
+input-noBorder()
+  border none
+  outline none
+// 标题
+title-style(n)
+  font-size n
+  position absolute
+  top 40%
+  left 50%
+  transform translate(-50%,-50%)
